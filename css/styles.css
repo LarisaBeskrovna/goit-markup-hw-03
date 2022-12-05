@@ -322,5 +322,7 @@ padding-bottom: 60px;
     
 }
 .images-box{
-   
+   display: flex;
+   flex-wrap: wrap;
+   width: 1200px;
 }
