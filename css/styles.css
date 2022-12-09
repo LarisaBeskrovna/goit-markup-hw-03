@@ -7,35 +7,53 @@
     --color-logo: #2196F3;
     --color-title: #212121;
 }
+.container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
+   
+   }
+   
 
 body{
     font-family: 'Roboto';
-    color: #000;
-   }
-
-   .container{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #000;}
+   
+h1, h2, h3, p {
+        margin: 0;
+    }
+ul{
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
     
-   }
-.container-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-bottom: 1px solid #ECECEC;
+a{
+        text-decoration: none;
+    color: inherit;
+    }
     
-}
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        font-style: normal;
+    }
+    
+    address {
+        font-style: normal;
+    }
 
 .header-nav{
     display: flex;
     flex-grow: 1;
     align-items: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
 }
 .logo{
     font-family: 'Raleway';
@@ -60,6 +78,7 @@ body{
     letter-spacing: 0.03em;
   color: var(--color-button); 
   text-decoration: none; 
+
 }
 .dot{
     list-style-type: none; 
@@ -70,7 +89,10 @@ body{
     
 
 }
-
+.section{
+    padding-bottom: 94px;
+   
+ }
 
 /*верхня лінія*/
 
@@ -88,6 +110,7 @@ list-style-type: none;
 list-style-type: none;
 display: flex;
 gap: 50px;
+padding-left: 95px;
 
 }
 .link:hover{
@@ -106,27 +129,40 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
+.contact{
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+color: #757575;
 
-.section{
-   padding-top: 94px;
-  
 }
+.contact:hover
+{
+color: var(--color-logo);
+}
+.menu{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+.contacte{
+    display: flex;
+gap: 50px;
+}
+
+
+
 /* cекція перша*/
 .caption{
     background: #2F303A;
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     
     
 }
-.container-caption{
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .slogan{
 font-weight: 900;
 font-size: 44px;
@@ -193,12 +229,13 @@ border: 0;
 /*секція друга*/
 
 .title{
-    font-family: 'Roboto';
+    
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--color-title);
+padding-bottom: 10px;
 }
 .text{
     font-family: 'Roboto';
@@ -208,62 +245,26 @@ letter-spacing: 0.03em;
 color: #757575;
 
 }
-.container-text{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;  
-}
-.text-box {
-    display: flex;  
-    display: inline-block;
-    width: 270px;
 
-}
 
 /*секция третя*/
 
-.container-subtitle{
-    width: 1200px; 
-    margin-left: auto;
-    margin-right: auto;
 
-}
-.subtitle-box{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 50px; 
-    
-}
 
 /*секція четверта*/
 
 .subtitle{
-    font-family: 'Roboto';
+   
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--color-title);
+padding-bottom: 50px;
 
 }
-.container-img{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
 
-}
-.img-box{
-    
-    flex-basis: calc((100%-90px)/4);
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-   
-    
-}
+
 .name{
 font-family: 'Roboto';
 font-style: normal;
@@ -288,21 +289,11 @@ padding-top: 10px;
 
 .caption-footer{
     background: #2F303A;
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
 }
-.contact{
-    font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-text-decoration: none;
-color: #757575;
-}
-.contact:hover
-{
-color: var(--color-logo);
+
+.logo-box{
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .adres{
@@ -323,51 +314,16 @@ color: rgba(255, 255, 255, 0.6);
 text-decoration: none;
 list-style-type: none;
 padding: 0;
+padding-bottom: 60px;
 }
 
-.logo-box{
-    padding-top: 60px;
-    padding-left: 15px;
-}
-
-.adres-box{
-    display: block;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-bottom: 60px;
-
-}
 .adress{
     margin-top: 10px;
 }
 /*секція портфоліо*/
 
-.container-buuton{
-    display: block;
-   margin-left: auto;
-   margin-right: auto;
-    margin-bottom: 30px;
-    width: 575px;
-    
-    
-}
-.container-images{
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: block;
-    margin-bottom: 94px;
-    
-    
-}
-.images-box{
-   display: flex;
-   
-   
-}
+
 .dot-portfolio{
-    width: 1200px;
     list-style-type: none; 
     flex-wrap: wrap;
     display: flex;
@@ -375,23 +331,26 @@ padding: 0;
     padding: 0;
     gap: 30px;
     margin-top: 34px;
-    margin-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
+    
 }
 .dot-button{
     
-    list-style-type: none; 
     display: flex;
-    padding: 0;
-    gap: 8px;  
+    gap: 8px; 
+    margin-top: 94px; 
+    margin-bottom: 50px;
+    justify-content: center;
+    
 }
 .description{
+    padding: 20px 24px;
+}
+.text-box
+{
     font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--color-title);
-padding-top: 20px;
 margin: 0;
 
 }
@@ -402,4 +361,7 @@ letter-spacing: 0.03em;
 color: #757575;
 padding-top: 4px;
 margin: 0;
+}
+.header{
+    border-bottom: 1px solid #ECECEC;
 }
